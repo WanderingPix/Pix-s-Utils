@@ -10,7 +10,7 @@ namespace ScreenshotMod
     {
       if (Input.GetKeyDown(KeyCode.F2))
       {
-        //Insert Screenshot Logic here
+        ScreenCapture.CaptureScreenshot(Application.dataPath + "/screenshots/" + "screenshot_" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".png", 4);
       }
     }
   }
