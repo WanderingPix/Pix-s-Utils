@@ -1,0 +1,12 @@
+﻿ <Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup>
+	<TargetFramework>net6.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+		<Version>1.0.0</Version>
+		<Description>Colorful Bubbles!</Description>
+		<Authors>Wandering.Pix</Authors>
+	</PropertyGroup>
+
+	<Import Project="c:\Users\User\Desktop\My Personal projects\TheSillyRoles\TheSillyRoles\AmongUs.props" />
+	<Import Project="c:\Users\User\Desktop\My Personal projects\PITOUR\Town-Of-Us-R-5.1.1 Experimental Build\source\TownOfUs.csproj" />
+</Project>
