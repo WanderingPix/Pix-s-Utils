@@ -1,0 +1,28 @@
+name: Compilation Workflow
+
+on: [ "push", "pull_request" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.x
+
+      - name: Run the Cake script
+        uses: cake-build/cake-action@v1
+        with:
+          verbosity: Diagnostic
+
+      - name: Upload ScreenshotMod artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ScreenshotMod.dll
+          path: bin/Debug/net6.0/ScreenshotMod.dll
