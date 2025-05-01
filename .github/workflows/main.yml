@@ -20,7 +20,7 @@ jobs:
         uses: cake-build/cake-action@v1
         with:
           verbosity: Diagnostic
-          project-path: ScreenshotMod/ScreenshotMod.csproj
+          target: ScreenshotMod/ScreenshotMod.csproj
 
       - name: Upload ScreenshotMod artifact
         uses: actions/upload-artifact@v4
