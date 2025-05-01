@@ -16,14 +16,27 @@ jobs:
         with:
           dotnet-version: 6.x
 
-      - name: Run the Cake script
+      - name: Compile ScreenshotMod
         uses: cake-build/cake-action@v1
         with:
           verbosity: Diagnostic
           target: ScreenshotMod/ScreenshotMod.csproj
+
+      - name: Compile ColorfulBubbles
+        uses: cake-build/cake-action@v1
+        with:
+          verbosity: Diagnostic
+          target: ColorfulBubbles/ColorfulBubbles.csproj
+
 
       - name: Upload ScreenshotMod artifact
         uses: actions/upload-artifact@v4
         with:
           name: ScreenshotMod.dll
           path: ScreenshotMod/bin/Debug/net6.0/ScreenshotMod.dll
+
+      - name: Upload ColorfulBubbles artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ColorfulBubbles.dll
+          path: ColorfulBubbles/bin/Debug/net6.0/ScreenshotMod.dll
