@@ -20,7 +20,7 @@ jobs:
         uses: cake-build/cake-action@v1
         with:
           verbosity: Diagnostic
-          target: ScreenshotMod/ScreenshotMod.csproj
+          target: /home/runner/work/Pix's Utils/Pix's Utils/ScreenshotMod/ScreenshotMod.csproj
 
       - name: Compile ColorfulBubbles
         uses: cake-build/cake-action@v1
