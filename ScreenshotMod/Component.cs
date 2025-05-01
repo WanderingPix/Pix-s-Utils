@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using UnityEngine;
 
-namespace ScreenshotMod
+namespace SayCheese
 {
   public class ScreenshotComp : MonoBehaviour
   {
