@@ -4,8 +4,9 @@ using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
 using Reactor;
 using Reactor.Utilities;
+using Il2CppInterop.Runtime.Injection;
 
-namespace ScreenshotMod;
+namespace SayCheese;
 
 [BepInAutoPlugin]
 [BepInProcess("Among Us.exe")]
@@ -15,7 +16,9 @@ public partial class TemplatePlugin : BasePlugin
     public Harmony Harmony { get; } = new(Id);
     public override void Load()
     {
-    Harmomy.PatchAll();
+         Harmomy.PatchAll();
+         ClassInjector.RegisterTypeInIl2Cpp<FrozenBody>();
+
     }
 }
     
