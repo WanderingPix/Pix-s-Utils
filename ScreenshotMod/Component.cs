@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ScreenshotMod
 {
-  public class Main
+  public class ScreenshotComp : MonoBehaviour
   {
     public void FixedUpdate()
     {
