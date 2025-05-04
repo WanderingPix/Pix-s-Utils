@@ -26,7 +26,7 @@ jobs:
         uses: cake-build/cake-action@v1
         with:
           verbosity: Diagnostic
-          target: ColorfulBubbles/ColorfulBubbles.csproj
+          target: ColorfulBubbles/ColorfulBubbles.sln
 
 
       - name: Upload ScreenshotMod artifact
