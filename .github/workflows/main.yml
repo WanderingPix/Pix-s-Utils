@@ -1,4 +1,4 @@
-name: Compilation Workflow
+name: CI
 
 on: [ "push", "pull_request" ]
 
