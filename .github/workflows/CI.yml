@@ -20,13 +20,13 @@ jobs:
         uses: cake-build/cake-action@v1
         with:
           verbosity: Diagnostic
-          target: ScreenshotMod/ScreenshotMod.csproj
+          target: ScreenshotMod/SayCheese.csproj
           
       - name: Compile ColorfulBubbles
         uses: cake-build/cake-action@v1
         with:
           verbosity: Diagnostic
-          target: ColorfulBubbles/ColorfulBubbles.sln
+          target: ColorfulBubbles/ColorfulBubbles.csproj
 
 
       - name: Upload ScreenshotMod artifact
